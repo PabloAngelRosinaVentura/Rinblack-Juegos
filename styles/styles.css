@@ -1,0 +1,433 @@
+@font-face {
+  font-family: BebasNeueBold;
+  src: url("../fonts/BebasNeue Bold.otf");
+}
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url("../fonts/BebasNeue Regular.otf");
+}
+@font-face {
+  font-family: CenturyGothic;
+  src: url("../fonts/Gothic.ttf");
+}
+.encabezado {
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.encabezado .logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 150px 0px;
+}
+.encabezado .logos img {
+  width: 130px;
+}
+.encabezado .logos .redes {
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.encabezado .logos .redes img {
+  width: 30px;
+  transition: all 0.3s;
+}
+.encabezado .logos .redes img:hover {
+  background-color: #efa343;
+  border-radius: 3px;
+  padding: 2px;
+}
+.encabezado nav {
+  background-color: #efa343;
+  width: 50vw;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+.encabezado nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 150px;
+  font-family: BebasNeueRegular;
+  font-size: 25px;
+}
+.encabezado nav ul a {
+  color: #282828;
+  transition: all 0.2s ease;
+}
+.encabezado nav ul a:hover {
+  color: #ffffff;
+  background: #282828;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+#encabezadoIndex {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/portada.jpg);
+  height: 100vh;
+}
+
+#encabezadoJuegos {
+  background-image: url(../img/portadaJuegos.jpg);
+}
+
+#encabezadoPedidos {
+  background-image: url(../img/portadaPedidos.jpg);
+}
+
+#encabezadoContactos {
+  background-image: url(../img/portadaContacto.jpg);
+}
+
+#encabezadoNosotros {
+  background-image: url(../img/portadaNosotros.jpg);
+}
+
+/*index*/
+#seccion1 {
+  background-color: #282828;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 150px;
+}
+#seccion1 img {
+  width: 30%;
+}
+
+#seccion2 {
+  display: grid;
+  grid-template-areas: "tituloSeccion2 tituloSeccion2 tituloSeccion2" "Simpson Simuladores Werewolf" "formIndex formIndex formIndex";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+#seccion2 form {
+  grid-area: formIndex;
+  text-align: center;
+}
+
+.tituloGaleria {
+  grid-area: tituloSeccion2;
+  background-color: #282828;
+  text-align: center;
+  padding: 50px 150px;
+}
+.tituloGaleria h2 {
+  background-color: #282828;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: BebasNeueRegular;
+  color: #ffffff;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+}
+
+.galeria {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+/*juegos*/
+#seccionJuegos {
+  display: grid;
+  grid-template-areas: "tituloSeccion2 tituloSeccion2 tituloSeccion2 tituloSeccion2" "Simpson Simuladores Werewolf HSM" "form form form form";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+/*pedidos*/
+.seccionPedidos {
+  background-color: #282828;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 150px;
+  width: 100%;
+}
+.seccionPedidos img {
+  width: 30%;
+}
+
+/*nosotros*/
+#seccionNosotros {
+  background-color: #282828;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px auto;
+  grid-template-areas: "tituloNos tituloNos" "imgNos Nosotros";
+  padding: 50px 150px;
+}
+#seccionNosotros img {
+  grid-area: imgNos;
+  width: 90%;
+}
+#seccionNosotros .tituloNos {
+  grid-area: tituloNos;
+  text-align: center;
+}
+#seccionNosotros p {
+  grid-area: Nosotros;
+  overflow: auto;
+  height: 400px;
+  padding-left: 50px;
+}
+
+/*contacto*/
+#seccionContacto {
+  background-color: #282828;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "tituloCont formCont";
+  padding: 50px 150px;
+}
+#seccionContacto .tituloCont {
+  grid-area: tituloCont;
+}
+#seccionContacto form {
+  grid-area: formCont;
+  margin-left: 50px;
+  color: #ffffff;
+  font-family: CenturyGothic;
+  font-size: medium;
+}
+#seccionContacto form .input {
+  width: 80%;
+  color: #ffffff;
+  background: none;
+  border-bottom: 2px solid #ffffff;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: 0px;
+}
+
+/*footer*/
+footer {
+  background-color: #282828;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 150px;
+}
+footer img {
+  width: 100px;
+}
+footer .redesFooter {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .redesFooter img {
+  width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  /*parametros generales*/
+  /*body*/
+  .boton {
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+  }
+  .encabezado {
+    height: 100vh;
+  }
+  .encabezado .logos {
+    padding-top: 50px;
+    justify-content: center;
+  }
+  .encabezado .logos .redes {
+    display: none;
+  }
+  .encabezado nav {
+    width: 100vw;
+    margin-bottom: 0;
+  }
+  .encabezado nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  /*index*/
+  #seccion1, .seccionPedidos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  #seccion1 img, .seccionPedidos img {
+    width: 80%;
+    margin-top: 50px;
+  }
+  #seccion2 {
+    grid-template-areas: "tituloSeccion2" "Simpson" "Simuladores" "Werewolf" "formIndex";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    width: 100vw;
+  }
+  /*juegos*/
+  #seccionJuegos {
+    grid-template-areas: "tituloSeccion2" "Simpson" "Simuladores" "Werewolf" "HSM" "form";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  /*nosotros*/
+  #seccionNosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto auto;
+    grid-template-areas: "tituloNos" "Nosotros" "imgNos";
+    padding: 50px 20px;
+    text-align: center;
+  }
+  #seccionNosotros img {
+    width: 80%;
+    padding-top: 20px;
+  }
+  #seccionNosotros p {
+    padding: 0px;
+  }
+  /*contacto*/
+  #seccionContacto {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tituloCont" "formCont";
+    padding: 50px 20px;
+    text-align: center;
+  }
+  #seccionContacto form {
+    padding: 50px 0px;
+    margin: 0;
+  }
+  /*footer*/
+  footer {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+  }
+  footer img {
+    margin-top: 20px;
+    width: 120px;
+  }
+  footer .redesFooter {
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  footer .redesFooter img {
+    width: 30px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+* body {
+  background-color: #ddb786;
+}
+* body h1 {
+  font-family: BebasNeueRegular;
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #efa343;
+  text-align: center;
+}
+* body h2 {
+  background-color: #efa343;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-family: BebasNeueRegular;
+  color: #ffffff;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+}
+* body span {
+  color: #ffffff;
+}
+.seccion {
+  margin: 40px 0px;
+}
+
+* body .boton {
+  background-color: #282828;
+  color: #ffffff;
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin: 30px;
+  font-family: CenturyGothic;
+  transition: all 0.5s;
+}
+* body .boton:hover {
+  color: #282828;
+  border-radius: 3px;
+  background-color: #ffffff;
+  font-size: 14px;
+  box-shadow: 0px 0px 10px;
+}
+
+* body h3 {
+  font-size: 25px;
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+}
+
+* body p {
+  color: #ffffff;
+  font-family: CenturyGothic;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+}
+
+.HSM, .Werewolf, .Simuladores, .Simpson {
+  background-color: #efa343;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.Simpson {
+  grid-area: Simpson;
+}
+.Simpson img {
+  box-shadow: #8b8b8b -20px 20px;
+}
+
+.Simuladores {
+  grid-area: Simuladores;
+}
+.Simuladores img {
+  box-shadow: #8b8b8b 0px 20px;
+}
+.Simuladores #SimuladoresJuegos {
+  box-shadow: #8b8b8b -20px 20px;
+}
+
+.Werewolf {
+  grid-area: Werewolf;
+}
+.Werewolf img {
+  box-shadow: #8b8b8b 20px 20px;
+}
+
+.HSM {
+  grid-area: HSM;
+}
+.HSM img {
+  box-shadow: #8b8b8b 20px 20px;
+}/*# sourceMappingURL=styles.css.map */

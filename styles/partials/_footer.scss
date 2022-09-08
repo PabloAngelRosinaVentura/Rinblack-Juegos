@@ -1,0 +1,23 @@
+/*footer*/
+footer {
+    background-color: $backgroundColor2;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px;
+
+    img {
+        width: 100px;
+    }
+
+    .redesFooter {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 25px;
+        }
+    }
+}

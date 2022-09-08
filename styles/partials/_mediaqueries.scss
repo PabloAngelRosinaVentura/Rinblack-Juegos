@@ -1,0 +1,117 @@
+@media screen and (max-width: 768px) {
+    /*parametros generales*/
+    /*body*/
+    .boton{
+        width: 150px;
+        height: 50px;
+        font-size: larger;
+    }
+    .encabezado {
+        height: 100vh;
+        .logos {
+            padding-top: 50px;
+            justify-content: center;
+            .redes {
+                display: none;
+            }
+        }
+        nav {
+            width: 100vw;
+            margin-bottom: 0;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0px;
+            }
+        }
+    }
+
+    /*index*/
+    #seccion1, .seccionPedidos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+        img {
+            width: 80%;
+            margin-top: 50px; 
+        }
+    }
+    #seccion2 {
+        grid-template-areas:
+            "tituloSeccion2"
+            "Simpson"
+            "Simuladores"
+            "Werewolf"
+            "formIndex";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        width: 100vw;
+    }
+
+    /*juegos*/
+    #seccionJuegos {
+        grid-template-areas:
+        "tituloSeccion2"
+        "Simpson"
+        "Simuladores"
+        "Werewolf"
+        "HSM"
+        "form";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+    /*nosotros*/
+    #seccionNosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto auto;
+        grid-template-areas:
+        "tituloNos"
+        "Nosotros"
+        "imgNos";
+        padding: 50px 20px;
+        text-align: center;
+        img {
+            width: 80%;
+            padding-top: 20px;
+        }
+        p {
+            padding: 0px;
+        }
+    }
+    
+    /*contacto*/
+    #seccionContacto {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "tituloCont"
+        "formCont";
+        padding: 50px 20px;
+        text-align: center;
+        form {
+            padding: 50px 0px;
+            margin: 0;
+        }
+    }
+    
+    /*footer*/
+    footer {
+        height: 210px;
+        @include display(column, space-around);
+        align-items: center;
+        padding: 0px;
+        img {
+            margin-top: 20px;
+            width: 120px;
+        }
+        .redesFooter {
+            margin-bottom: 20px;
+            width: 120px;
+            img{
+                width: 30px;
+            }
+        }
+    }
+}

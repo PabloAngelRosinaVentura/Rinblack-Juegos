@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+
+    body {
+        background-color: $backgroundBody;
+
+        h1 {
+            font-family: BebasNeueRegular;
+            font-size: 50px;
+            letter-spacing: 3px;
+            color: $backgroundColor1;
+            text-align: center;
+        }
+        h2 {
+           @include titulos($backgroundColor1, 50px); 
+        }
+        h3 {
+            @extend %tituloSec;
+        }
+        p {
+            @extend %texto;
+        }
+        span {
+            color: $primaryColor;
+        }
+        .boton {
+            @extend %boton;
+        }
+    }
+
+}
+.seccion {
+    margin: 40px 0px;
+}

@@ -1,0 +1,15 @@
+@mixin titulos($backgroundColor, $marginBottom) {
+    background-color: $backgroundColor;
+    margin-bottom: $marginBottom;
+    font-size: 40px;
+    font-family: BebasNeueRegular;
+    color: $primaryColor;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+}
+
+@mixin display($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}

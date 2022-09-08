@@ -1,0 +1,122 @@
+/*index*/
+#seccion1 {
+    background-color: $backgroundColor2;
+    @include display(row, space-between);
+    padding: 50px 150px;
+
+    img {
+        width: 30%
+    }
+}
+#seccion2 {
+    display: grid;
+    grid-template-areas:
+    "tituloSeccion2 tituloSeccion2 tituloSeccion2"
+    "Simpson Simuladores Werewolf"
+    "formIndex formIndex formIndex";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    form {
+        grid-area: formIndex;
+        text-align: center;
+    }
+}
+.tituloGaleria {
+    grid-area: tituloSeccion2;
+    background-color: $backgroundColor2;
+    text-align: center;
+    padding: 50px 150px;
+    h2 {
+        @include titulos($backgroundColor2, 10px)
+    }
+}
+.galeria {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+/*juegos*/
+#seccionJuegos {
+    display: grid;
+    grid-template-areas:
+    "tituloSeccion2 tituloSeccion2 tituloSeccion2 tituloSeccion2"
+    "Simpson Simuladores Werewolf HSM"
+    "form form form form";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+/*pedidos*/
+.seccionPedidos {
+    background-color: $backgroundColor2;
+    @include display(row, space-between);
+    padding: 50px 150px;
+    width: 100%;
+
+    img {
+        width: 30%
+    }
+}
+
+/*nosotros*/
+#seccionNosotros {
+    background-color: $backgroundColor2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px auto;
+    grid-template-areas:
+        "tituloNos tituloNos"
+        "imgNos Nosotros";
+    padding: 50px 150px;
+    
+    img {
+        grid-area: imgNos;
+        width: 90%;
+    }
+
+    .tituloNos {
+        grid-area: tituloNos;
+        text-align: center;
+    }
+    
+    p {
+        grid-area: Nosotros;
+        overflow: auto;
+        height: 400px;
+        padding-left: 50px;
+    }
+
+}
+
+/*contacto*/
+#seccionContacto {
+    background-color: $backgroundColor2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "tituloCont formCont";
+    padding: 50px 150px;
+
+    .tituloCont {
+        grid-area: tituloCont;
+    }
+
+    form {
+        grid-area: formCont;
+        margin-left: 50px;
+        color: $primaryColor;
+        font-family: CenturyGothic;
+        font-size: medium;
+        .input {
+            width: 80%;
+            color: $primaryColor;
+            background: none;
+            border-bottom: 2px solid $primaryColor;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            outline: 0px;
+        }
+    }
+}

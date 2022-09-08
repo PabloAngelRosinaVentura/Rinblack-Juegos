@@ -1,0 +1,78 @@
+.encabezado {
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    @include display(column, space-between);
+    
+    .logos {
+        @include display(row, space-between);
+        padding: 50px 150px 0px;
+        
+        img {
+            width: 130px;
+        }
+        .redes {
+            width: 120px;
+            @include display(row, space-between);
+            
+            img {
+                width: 30px;
+                transition: all 0.3s;
+                
+                &:hover {
+                    background-color: $backgroundColor1;
+                    border-radius: 3px;
+                    padding: 2px;
+                }
+            }
+        }
+    }
+    
+    nav {
+        background-color: $backgroundColor1;
+        width: 50vw;
+        margin-bottom: 50px;
+        margin-left: auto;
+    
+        ul {
+            @include display(row, space-between);
+            align-items: center;
+            padding-right: 150px;
+            font-family: BebasNeueRegular;
+            font-size: 25px;
+    
+            a {
+                color: $backgroundColor2;
+                transition: all 0.2s ease;
+    
+                &:hover {
+                    color: $primaryColor;
+                    background: $backgroundColor2;
+                    padding: 5px 10px;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}
+
+#encabezadoIndex {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/portada.jpg);
+    height: 100vh;
+}
+
+#encabezadoJuegos {
+    background-image: url(../img/portadaJuegos.jpg);
+}
+
+#encabezadoPedidos {
+    background-image: url(../img/portadaPedidos.jpg);
+}
+
+#encabezadoContactos {
+    background-image: url(../img/portadaContacto.jpg);
+}
+
+#encabezadoNosotros {
+    background-image: url(../img/portadaNosotros.jpg);
+}

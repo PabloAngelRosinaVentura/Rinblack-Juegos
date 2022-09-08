@@ -1,0 +1,31 @@
+.Simpson {
+    @extend %img;
+    grid-area: Simpson;
+    img {
+        box-shadow: map-get($sombraImg, sombra)
+    }
+}
+.Simuladores {
+    @extend %img;
+    grid-area: Simuladores;
+    img {
+        box-shadow: map-get($sombraImg, sombra2)
+    }
+    #SimuladoresJuegos {
+    box-shadow: map-get($sombraImg, sombra)
+    }
+}
+.Werewolf {
+    @extend %img;
+    grid-area: Werewolf;
+    img {
+        box-shadow: map-get($sombraImg, sombra3)
+    }
+}
+.HSM {
+    @extend %img;
+    grid-area: HSM;
+    img {
+        box-shadow: map-get($sombraImg, sombra3)
+    }
+}
