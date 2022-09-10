@@ -15,10 +15,6 @@
             padding: 50px 0px 0px 150px;
         }
     }
-
-    #img {
-        @include img(url("../../img/1index.jpg"), 650px, 450px);
-    }
 }
 
 #seccion2 {

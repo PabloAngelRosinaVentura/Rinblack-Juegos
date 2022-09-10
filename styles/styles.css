@@ -110,22 +110,6 @@
 .seccion1 .texto p {
   padding: 50px 0px 0px 150px;
 }
-.seccion1 #img {
-  background-image: url("../../img/1index.jpg");
-  background-size: cover;
-  background-position: center center;
-  max-width: 50%;
-  width: 650px;
-  height: 450px;
-  box-shadow: #8b8b8b 20px 20px;
-  transition: all 200ms;
-}
-.seccion1 #img:hover {
-  transform: scale(1.07);
-  border-radius: 10px;
-  box-shadow: none;
-  border: 3px solid #ffffff;
-}
 
 #seccion2 {
   background-color: #efa343;
@@ -378,6 +362,23 @@ footer .redesFooter img {
   transition: all 200ms;
 }
 .galeria:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
+#img {
+  background-image: url("../img/1index.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 50%;
+  width: 650px;
+  height: 450px;
+  box-shadow: #8b8b8b 20px 20px;
+  transition: all 200ms;
+}
+#img:hover {
   transform: scale(1.07);
   border-radius: 10px;
   box-shadow: none;

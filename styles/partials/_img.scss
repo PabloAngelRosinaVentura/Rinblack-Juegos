@@ -47,6 +47,9 @@
         border: 3px solid $primaryColor;
     }
 }
+#img {
+    @include img(url("../img/1index.jpg"), 650px, 450px);
+}
 #img2 {
     @include img(url("../img/Pedidos1.jpg"), 490px, 320px)
 }
