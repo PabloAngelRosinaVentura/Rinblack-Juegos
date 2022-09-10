@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mandanos un mensajito y pedinos el juego que estás buscando. Y si no también podemos tomar un café. Es que... yo no tengo amigos... y no pienso ir al bosque yo solito.">
-    <meta name="keywords" content="JUEGOS DE MESA, PERSONALIZADOS, PELICULAS, SERIES, JUEGOS, DISEÑO, CARTAS, MONOPOLY, LUDO, JUEGO DE LA OCA, MAZOS">
+    <meta name="description"
+        content="Mandanos un mensajito y pedinos el juego que estás buscando. Y si no también podemos tomar un café. Es que... yo no tengo amigos... y no pienso ir al bosque yo solito.">
+    <meta name="keywords"
+        content="JUEGOS DE MESA, PERSONALIZADOS, PELICULAS, SERIES, JUEGOS, DISEÑO, CARTAS, MONOPOLY, LUDO, JUEGO DE LA OCA, MAZOS">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../img/favicon.png">
     <title>Rinblack - Contacto</title>
@@ -37,38 +39,41 @@
         </nav>
     </header>
     <main>
-        <section id="seccionContacto" class="seccion">
-            <div class="tituloCont">
-                <H2>MANDANOS UN MENSAJE</H2>
-                <P>Por cualquier consulta podes comunicarte con nosotros a través de todas nuestras redes sociales. Siempre queremos hablar con vos.</P>
+        <section class="seccion1 seccion">
+            <div id="containerCont">
+                <div class="tituloCont">
+                    <H2>MANDANOS UN MENSAJE</H2>
+                    <P>Por cualquier consulta podes comunicarte con nosotros a través de todas nuestras redes sociales.
+                        Siempre queremos hablar con vos.</P>
+                </div>
+                <form class="formContact">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <br>
+                        <input class="input" type="text" id="nombre" placeholder="Nombre">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="tel">Teléfono</label>
+                        <br>
+                        <input class="input" type="number" id="tel">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email</label>
+                        <br>
+                        <input class="input" type="email" id="email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="texto">Mensaje (opcional)</label>
+                        <br>
+                        <textarea class="input" id="texto"></textarea>
+                    </div>
+                    <br>
+                    <input class="boton" type="submit" value="Enviar">
+                </form>
             </div>
-            <form>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <br>
-                    <input class="input" type="text" id="nombre" placeholder="Nombre">
-                </div>
-                <br>
-                <div>
-                    <label for="tel">Teléfono</label>
-                    <br>
-                    <input class="input" type="number" id="tel">
-                </div>
-                <br>
-                <div>
-                    <label for="email">Email</label>
-                    <br>
-                    <input class="input" type="email" id="email">
-                </div>
-                <br>
-                <div>
-                    <label for="texto">Mensaje (opcional)</label>
-                    <br>
-                    <textarea class="input" id="texto"></textarea>
-                </div>
-                <br>
-                <input class="boton" type="submit" value="Enviar">
-            </form>
         </section>
     </main>
     <footer>

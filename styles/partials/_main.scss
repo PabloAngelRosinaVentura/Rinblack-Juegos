@@ -1,122 +1,160 @@
 /*index*/
-#seccion1 {
+.seccion1 {
     background-color: $backgroundColor2;
-    @include display(row, space-between);
-    padding: 50px 150px;
 
-    img {
-        width: 30%
+    .texto {
+        min-width: 50%;
+        max-width: 50%;
+        margin-right: 90px;
+
+        h2 {
+            padding-left: 150px;
+        }
+
+        p {
+            padding: 50px 0px 0px 150px;
+        }
+    }
+
+    #img {
+        @include img(url("../../img/1index.jpg"), 650px, 450px);
     }
 }
+
 #seccion2 {
-    display: grid;
-    grid-template-areas:
-    "tituloSeccion2 tituloSeccion2 tituloSeccion2"
-    "Simpson Simuladores Werewolf"
-    "formIndex formIndex formIndex";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    form {
-        grid-area: formIndex;
+    background-color: $backgroundColor1;
+
+    .juegos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        margin: 3% 3% 0% 3%;
+    }
+
+    .form {
         text-align: center;
     }
 }
+
 .tituloGaleria {
-    grid-area: tituloSeccion2;
     background-color: $backgroundColor2;
     text-align: center;
     padding: 50px 150px;
+
     h2 {
-        @include titulos($backgroundColor2, 10px)
+        @include titulos($backgroundColor2)
     }
 }
+
 .galeria {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+    transition: all 200ms;
+
+    &:hover {
+        transform: scale(1.07);
+        border-radius: 10px;
+        box-shadow: none;
+        border: 3px solid $primaryColor;
+    }
 }
 
 /*juegos*/
 #seccionJuegos {
-    display: grid;
-    grid-template-areas:
-    "tituloSeccion2 tituloSeccion2 tituloSeccion2 tituloSeccion2"
-    "Simpson Simuladores Werewolf HSM"
-    "form form form form";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    background-color: $backgroundColor1;
+
+    .juegos2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+        margin: 3%;
+    }
 }
 
 /*pedidos*/
-.seccionPedidos {
-    background-color: $backgroundColor2;
-    @include display(row, space-between);
-    padding: 50px 150px;
-    width: 100%;
+#img2 {
+    @include img(url("../../img/Pedidos1.jpg"), 490px, 320px)
+}
 
-    img {
-        width: 30%
-    }
+#img3 {
+    @include img(url("../../img/Pedidos2.jpg"), 490px, 270px)
+}
+
+#img4 {
+    @include img(url("../../img/Pedidos3.jpg"), 490px, 215px)
 }
 
 /*nosotros*/
-#seccionNosotros {
-    background-color: $backgroundColor2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px auto;
-    grid-template-areas:
-        "tituloNos tituloNos"
-        "imgNos Nosotros";
+.tituloNos {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.seccionNos {
+    @include display(row, space-between);
     padding: 50px 150px;
-    
-    img {
-        grid-area: imgNos;
-        width: 90%;
+    max-width: 2000px;
+    margin: auto;
+    align-items: center;
+
+    #img5 {
+        background-image: url("../../img/nosotros.jpg");
+        background-size: cover;
+        background-position: center center;
+        min-width: 50%;
+        width: 700px;
+        min-height: 486px;
+        box-shadow: map-get($sombraImg, sombra);
+        transition: all 200ms;
+
+        &:hover {
+            border-radius: 10px;
+            box-shadow: none;
+            border: 3px solid $primaryColor;
+        }
     }
 
-    .tituloNos {
-        grid-area: tituloNos;
-        text-align: center;
-    }
-    
     p {
-        grid-area: Nosotros;
+        padding-left: 70px;
+        height: 485px;
         overflow: auto;
-        height: 400px;
-        padding-left: 50px;
+        min-width: 50%;
     }
-
 }
 
 /*contacto*/
-#seccionContacto {
-    background-color: $backgroundColor2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "tituloCont formCont";
-    padding: 50px 150px;
-
-    .tituloCont {
-        grid-area: tituloCont;
+#containerCont {
+    @include display(row, space-between);
+    padding: 30px 150px 30px 0px;
+    align-items: flex-start;
+    max-width: 2000px;
+    margin: auto;
+}
+.tituloCont {
+    max-width: 50%;
+    h2 {
+        padding-left: 150px;
     }
+    p{
+        padding: 50px 0px 0px 150px; 
+    }
+}
+.formContact {
+    min-width: 50%;
+    padding-left: 70px;
+    color: $primaryColor;
+    font-family: CenturyGothic;
+    font-size: medium;
 
-    form {
-        grid-area: formCont;
-        margin-left: 50px;
+    .input {
+        width: 100%;
         color: $primaryColor;
-        font-family: CenturyGothic;
-        font-size: medium;
-        .input {
-            width: 80%;
-            color: $primaryColor;
-            background: none;
-            border-bottom: 2px solid $primaryColor;
-            border-top: none;
-            border-right: none;
-            border-left: none;
-            outline: 0px;
-        }
+        background: none;
+        border-bottom: 2px solid $primaryColor;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        outline: 0px;
     }
 }

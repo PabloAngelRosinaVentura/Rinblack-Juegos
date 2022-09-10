@@ -1,14 +1,18 @@
 @font-face {
   font-family: BebasNeueBold;
-  src: url("../fonts/BebasNeue Bold.otf");
+  src: url("../../fonts/BebasNeue Bold.otf");
 }
 @font-face {
   font-family: BebasNeueRegular;
-  src: url("../fonts/BebasNeue Regular.otf");
+  src: url("../../fonts/BebasNeue Regular.otf");
+}
+@font-face {
+  font-family: BebasNeueLight;
+  src: url("../../fonts/BebasNeue Light.otf");
 }
 @font-face {
   font-family: CenturyGothic;
-  src: url("../fonts/Gothic.ttf");
+  src: url("../../fonts/Gothic.ttf");
 }
 .encabezado {
   background-size: cover;
@@ -53,19 +57,21 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-right: 150px;
+  padding: 3px 150px 3px 50px;
   font-family: BebasNeueRegular;
-  font-size: 25px;
+  font-size: 22px;
 }
 .encabezado nav ul a {
   color: #282828;
   transition: all 0.2s ease;
+  letter-spacing: 2px;
 }
 .encabezado nav ul a:hover {
   color: #ffffff;
   background: #282828;
-  padding: 5px 10px;
+  padding: 7px 10px;
   border-radius: 2px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
 #encabezadoIndex {
@@ -90,115 +96,208 @@
 }
 
 /*index*/
-#seccion1 {
+.seccion1 {
   background-color: #282828;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 50px 150px;
 }
-#seccion1 img {
-  width: 30%;
+.seccion1 .texto {
+  min-width: 50%;
+  max-width: 50%;
+  margin-right: 90px;
+}
+.seccion1 .texto h2 {
+  padding-left: 150px;
+}
+.seccion1 .texto p {
+  padding: 50px 0px 0px 150px;
+}
+.seccion1 #img {
+  background-image: url("../../img/1index.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 50%;
+  width: 650px;
+  height: 450px;
+  box-shadow: #8b8b8b 20px 20px;
+  transition: all 200ms;
+}
+.seccion1 #img:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
 }
 
 #seccion2 {
-  display: grid;
-  grid-template-areas: "tituloSeccion2 tituloSeccion2 tituloSeccion2" "Simpson Simuladores Werewolf" "formIndex formIndex formIndex";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  background-color: #efa343;
 }
-#seccion2 form {
-  grid-area: formIndex;
+#seccion2 .juegos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  margin: 3% 3% 0% 3%;
+}
+#seccion2 .form {
   text-align: center;
 }
 
 .tituloGaleria {
-  grid-area: tituloSeccion2;
   background-color: #282828;
   text-align: center;
   padding: 50px 150px;
 }
 .tituloGaleria h2 {
   background-color: #282828;
-  margin-bottom: 10px;
-  font-size: 40px;
-  font-family: BebasNeueRegular;
+  font-size: 1.8rem;
+  font-family: BebasNeueLight;
   color: #ffffff;
-  letter-spacing: 4px;
+  letter-spacing: 0.2rem;
   word-spacing: 2px;
+  padding: 15px 0px;
 }
 
 .galeria {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  width: 80%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  transition: all 200ms;
+}
+.galeria:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
 }
 
 /*juegos*/
 #seccionJuegos {
+  background-color: #efa343;
+}
+#seccionJuegos .juegos2 {
   display: grid;
-  grid-template-areas: "tituloSeccion2 tituloSeccion2 tituloSeccion2 tituloSeccion2" "Simpson Simuladores Werewolf HSM" "form form form form";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin: 3%;
 }
 
 /*pedidos*/
-.seccionPedidos {
-  background-color: #282828;
+#img2 {
+  background-image: url("../../img/Pedidos1.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 50%;
+  width: 490px;
+  height: 320px;
+  box-shadow: #8b8b8b 20px 20px;
+  transition: all 200ms;
+}
+#img2:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
+#img3 {
+  background-image: url("../../img/Pedidos2.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 50%;
+  width: 490px;
+  height: 270px;
+  box-shadow: #8b8b8b 20px 20px;
+  transition: all 200ms;
+}
+#img3:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
+#img4 {
+  background-image: url("../../img/Pedidos3.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 50%;
+  width: 490px;
+  height: 215px;
+  box-shadow: #8b8b8b 20px 20px;
+  transition: all 200ms;
+}
+#img4:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
+/*nosotros*/
+.tituloNos {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.seccionNos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 50px 150px;
-  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+  align-items: center;
 }
-.seccionPedidos img {
-  width: 30%;
+.seccionNos #img5 {
+  background-image: url("../../img/nosotros.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-width: 50%;
+  width: 700px;
+  min-height: 486px;
+  box-shadow: #8b8b8b -20px 20px;
+  transition: all 200ms;
 }
-
-/*nosotros*/
-#seccionNosotros {
-  background-color: #282828;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px auto;
-  grid-template-areas: "tituloNos tituloNos" "imgNos Nosotros";
-  padding: 50px 150px;
+.seccionNos #img5:hover {
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
 }
-#seccionNosotros img {
-  grid-area: imgNos;
-  width: 90%;
-}
-#seccionNosotros .tituloNos {
-  grid-area: tituloNos;
-  text-align: center;
-}
-#seccionNosotros p {
-  grid-area: Nosotros;
+.seccionNos p {
+  padding-left: 70px;
+  height: 485px;
   overflow: auto;
-  height: 400px;
-  padding-left: 50px;
+  min-width: 50%;
 }
 
 /*contacto*/
-#seccionContacto {
-  background-color: #282828;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "tituloCont formCont";
-  padding: 50px 150px;
+#containerCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 150px 30px 0px;
+  align-items: flex-start;
+  max-width: 2000px;
+  margin: auto;
 }
-#seccionContacto .tituloCont {
-  grid-area: tituloCont;
+
+.tituloCont {
+  max-width: 50%;
 }
-#seccionContacto form {
-  grid-area: formCont;
-  margin-left: 50px;
+.tituloCont h2 {
+  padding-left: 150px;
+}
+.tituloCont p {
+  padding: 50px 0px 0px 150px;
+}
+
+.formContact {
+  min-width: 50%;
+  padding-left: 70px;
   color: #ffffff;
   font-family: CenturyGothic;
   font-size: medium;
 }
-#seccionContacto form .input {
-  width: 80%;
+.formContact .input {
+  width: 100%;
   color: #ffffff;
   background: none;
   border-bottom: 2px solid #ffffff;
@@ -229,16 +328,144 @@ footer .redesFooter img {
   width: 25px;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+* body {
+  background-color: #ddb786;
+}
+* body h1 {
+  font-family: BebasNeuebold;
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #efa343;
+  text-align: center;
+}
+* body h2 {
+  background-color: #efa343;
+  font-size: 1.8rem;
+  font-family: BebasNeueLight;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  word-spacing: 2px;
+  padding: 15px 0px;
+}
+* body h3:hover {
+  transform: scale(1.1);
+}
+* body span {
+  color: #ffffff;
+  font-family: BebasNeueLight;
+  font-weight: lighter;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 30px 30px 0px;
+  align-items: center;
+  max-width: 2000px;
+  margin: auto;
+}
+
+.seccion {
+  margin: 40px 0px;
+}
+
+* body .boton {
+  background-color: #282828;
+  color: #ffffff;
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 30px;
+  font-family: CenturyGothic;
+  transition: all 200ms;
+}
+* body .boton:hover {
+  color: #282828;
+  border-radius: 3px;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: #8b8b8b 5px 5px;
+}
+
+* body h3 {
+  font-size: 25px;
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  transition: 200ms;
+}
+
+* body p {
+  color: #ffffff;
+  font-family: CenturyGothic;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+}
+
+.Simpson {
+  text-align: center;
+}
+.Simpson img {
+  box-shadow: #8b8b8b -20px 20px;
+}
+
+.Simuladores {
+  text-align: center;
+}
+.Simuladores img {
+  box-shadow: #8b8b8b 0px 20px;
+}
+.Simuladores #SimuladoresJuegos {
+  box-shadow: #8b8b8b -20px 20px;
+}
+.Simuladores #SimuladoresJuegos:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
+.Werewolf {
+  text-align: center;
+}
+.Werewolf img {
+  box-shadow: #8b8b8b 20px 20px;
+}
+
+.HSM {
+  text-align: center;
+}
+.HSM img {
+  box-shadow: #8b8b8b 20px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 768px) {
   /*parametros generales*/
   /*body*/
   .boton {
     width: 150px;
     height: 50px;
-    font-size: larger;
+  }
+  #encabezadoIndex {
+    height: 80vh;
   }
   .encabezado {
-    height: 100vh;
+    height: 80vh;
   }
   .encabezado .logos {
     padding-top: 50px;
@@ -258,53 +485,31 @@ footer .redesFooter img {
     padding: 20px 0px;
   }
   /*index*/
-  #seccion1, .seccionPedidos {
+  .container {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 50px 20px;
+    justify-content: space-between;
+    padding: 30px 0px;
   }
-  #seccion1 img, .seccionPedidos img {
-    width: 80%;
-    margin-top: 50px;
-  }
-  #seccion2 {
-    grid-template-areas: "tituloSeccion2" "Simpson" "Simuladores" "Werewolf" "formIndex";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    width: 100vw;
-  }
-  /*juegos*/
-  #seccionJuegos {
-    grid-template-areas: "tituloSeccion2" "Simpson" "Simuladores" "Werewolf" "HSM" "form";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-  /*nosotros*/
-  #seccionNosotros {
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px auto auto;
-    grid-template-areas: "tituloNos" "Nosotros" "imgNos";
-    padding: 50px 20px;
-    text-align: center;
-  }
-  #seccionNosotros img {
-    width: 80%;
-    padding-top: 20px;
-  }
-  #seccionNosotros p {
+  .container .texto {
     padding: 0px;
+    margin: 0px;
+    max-width: 100%;
   }
-  /*contacto*/
-  #seccionContacto {
-    grid-template-columns: 1fr;
-    grid-template-areas: "tituloCont" "formCont";
-    padding: 50px 20px;
+  .container .texto h2 {
+    text-align: center;
+    padding: 15px;
+  }
+  .container .texto p {
+    padding: 30px 15px;
     text-align: center;
   }
-  #seccionContacto form {
-    padding: 50px 0px;
-    margin: 0;
+  .container #img {
+    display: none;
+  }
+  .juegos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   /*footer*/
   footer {
@@ -326,108 +531,4 @@ footer .redesFooter img {
   footer .redesFooter img {
     width: 30px;
   }
-}
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  list-style: none;
-  text-decoration: none;
-}
-* body {
-  background-color: #ddb786;
-}
-* body h1 {
-  font-family: BebasNeueRegular;
-  font-size: 50px;
-  letter-spacing: 3px;
-  color: #efa343;
-  text-align: center;
-}
-* body h2 {
-  background-color: #efa343;
-  margin-bottom: 50px;
-  font-size: 40px;
-  font-family: BebasNeueRegular;
-  color: #ffffff;
-  letter-spacing: 4px;
-  word-spacing: 2px;
-}
-* body span {
-  color: #ffffff;
-}
-.seccion {
-  margin: 40px 0px;
-}
-
-* body .boton {
-  background-color: #282828;
-  color: #ffffff;
-  border: none;
-  width: 100px;
-  height: 30px;
-  margin: 30px;
-  font-family: CenturyGothic;
-  transition: all 0.5s;
-}
-* body .boton:hover {
-  color: #282828;
-  border-radius: 3px;
-  background-color: #ffffff;
-  font-size: 14px;
-  box-shadow: 0px 0px 10px;
-}
-
-* body h3 {
-  font-size: 25px;
-  font-family: BebasNeueBold;
-  color: #ffffff;
-  letter-spacing: 3px;
-  word-spacing: 4px;
-}
-
-* body p {
-  color: #ffffff;
-  font-family: CenturyGothic;
-  letter-spacing: 3px;
-  word-spacing: 4px;
-}
-
-.HSM, .Werewolf, .Simuladores, .Simpson {
-  background-color: #efa343;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 50px;
-}
-
-.Simpson {
-  grid-area: Simpson;
-}
-.Simpson img {
-  box-shadow: #8b8b8b -20px 20px;
-}
-
-.Simuladores {
-  grid-area: Simuladores;
-}
-.Simuladores img {
-  box-shadow: #8b8b8b 0px 20px;
-}
-.Simuladores #SimuladoresJuegos {
-  box-shadow: #8b8b8b -20px 20px;
-}
-
-.Werewolf {
-  grid-area: Werewolf;
-}
-.Werewolf img {
-  box-shadow: #8b8b8b 20px 20px;
-}
-
-.HSM {
-  grid-area: HSM;
-}
-.HSM img {
-  box-shadow: #8b8b8b 20px 20px;
 }/*# sourceMappingURL=styles.css.map */

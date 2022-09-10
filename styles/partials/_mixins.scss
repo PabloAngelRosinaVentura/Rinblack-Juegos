@@ -1,15 +1,32 @@
-@mixin titulos($backgroundColor, $marginBottom) {
+@mixin titulos($backgroundColor) {
     background-color: $backgroundColor;
-    margin-bottom: $marginBottom;
-    font-size: 40px;
-    font-family: BebasNeueRegular;
+    font-size: 1.8rem;
+    font-family: BebasNeueLight;
     color: $primaryColor;
-    letter-spacing: 4px;
+    letter-spacing: 0.2rem;
     word-spacing: 2px;
+    padding: 15px 0px;
 }
 
 @mixin display($direction, $justify) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
+}
+
+@mixin img($url, $width, $height) {
+        background-image: $url;
+        background-size: cover;
+        background-position: center center;
+        max-width: 50%;
+        width: $width;
+        height: $height;
+        box-shadow: map-get($sombraImg, sombra3);
+        transition: all 200ms;
+        &:hover {
+            transform: scale(1.07);
+            border-radius: 10px;
+            box-shadow: none;
+            border: 3px solid $primaryColor;
+        }
 }

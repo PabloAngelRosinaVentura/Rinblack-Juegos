@@ -1,13 +1,23 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
 @media screen and (max-width: 768px) {
     /*parametros generales*/
     /*body*/
     .boton{
         width: 150px;
         height: 50px;
-        font-size: larger;
+    }
+    #encabezadoIndex {
+        height: 80vh;
     }
     .encabezado {
-        height: 100vh;
+        height: 80vh;
         .logos {
             padding-top: 50px;
             justify-content: center;
@@ -28,73 +38,32 @@
     }
 
     /*index*/
-    #seccion1, .seccionPedidos {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 50px 20px;
-        img {
-            width: 80%;
-            margin-top: 50px; 
-        }
-    }
-    #seccion2 {
-        grid-template-areas:
-            "tituloSeccion2"
-            "Simpson"
-            "Simuladores"
-            "Werewolf"
-            "formIndex";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
-        width: 100vw;
-    }
-
-    /*juegos*/
-    #seccionJuegos {
-        grid-template-areas:
-        "tituloSeccion2"
-        "Simpson"
-        "Simuladores"
-        "Werewolf"
-        "HSM"
-        "form";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-    }
-
-    /*nosotros*/
-    #seccionNosotros {
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px auto auto;
-        grid-template-areas:
-        "tituloNos"
-        "Nosotros"
-        "imgNos";
-        padding: 50px 20px;
-        text-align: center;
-        img {
-            width: 80%;
-            padding-top: 20px;
-        }
-        p {
+    .container {
+        @include display(column, space-between);
+        padding: 30px 0px;
+        .texto {
             padding: 0px;
+            margin: 0px;
+            max-width: 100%;
+            h2 {
+                text-align: center;
+                padding: 15px;
+            }
+            p {
+                padding: 30px 15px;
+                text-align: center;
+            }
+        }
+        #img {
+            display: none;
         }
     }
-    
-    /*contacto*/
-    #seccionContacto {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "tituloCont"
-        "formCont";
-        padding: 50px 20px;
-        text-align: center;
-        form {
-            padding: 50px 0px;
-            margin: 0;
-        }
+    .juegos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
+
+
     
     /*footer*/
     footer {

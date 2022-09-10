@@ -8,29 +8,43 @@
         background-color: $backgroundBody;
 
         h1 {
-            font-family: BebasNeueRegular;
+            font-family: BebasNeuebold;
             font-size: 50px;
             letter-spacing: 3px;
             color: $backgroundColor1;
             text-align: center;
         }
         h2 {
-           @include titulos($backgroundColor1, 50px); 
+           @include titulos($backgroundColor1); 
         }
         h3 {
             @extend %tituloSec;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
         p {
             @extend %texto;
         }
         span {
             color: $primaryColor;
+            font-family: BebasNeueLight;
+            font-weight: lighter
+
+
         }
         .boton {
             @extend %boton;
         }
     }
 
+}
+.container {
+    @include display(row, space-between);
+    padding: 30px 30px 30px 0px;
+    align-items: center;
+    max-width: 2000px;
+    margin: auto;
 }
 .seccion {
     margin: 40px 0px;
