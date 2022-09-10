@@ -1,18 +1,18 @@
 @font-face {
   font-family: BebasNeueBold;
-  src: url("../../fonts/BebasNeue Bold.otf");
+  src: url("../fonts/BebasNeue Bold.otf");
 }
 @font-face {
   font-family: BebasNeueRegular;
-  src: url("../../fonts/BebasNeue Regular.otf");
+  src: url("../fonts/BebasNeue Regular.otf");
 }
 @font-face {
   font-family: BebasNeueLight;
-  src: url("../../fonts/BebasNeue Light.otf");
+  src: url("../fonts/BebasNeue Light.otf");
 }
 @font-face {
   font-family: CenturyGothic;
-  src: url("../../fonts/Gothic.ttf");
+  src: url("../fonts/Gothic.ttf");
 }
 .encabezado {
   background-size: cover;
@@ -385,7 +385,7 @@ footer .redesFooter img {
 }
 
 #img2 {
-  background-image: url("../../img/Pedidos1.jpg");
+  background-image: url("../img/Pedidos1.jpg");
   background-size: cover;
   background-position: center center;
   max-width: 50%;
@@ -402,7 +402,7 @@ footer .redesFooter img {
 }
 
 #img3 {
-  background-image: url("../../img/Pedidos2.jpg");
+  background-image: url("../img/Pedidos2.jpg");
   background-size: cover;
   background-position: center center;
   max-width: 50%;
@@ -419,7 +419,7 @@ footer .redesFooter img {
 }
 
 #img4 {
-  background-image: url("../../img/Pedidos3.jpg");
+  background-image: url("../img/Pedidos3.jpg");
   background-size: cover;
   background-position: center center;
   max-width: 50%;
@@ -436,7 +436,7 @@ footer .redesFooter img {
 }
 
 #img5 {
-  background-image: url("../../img/nosotros.jpg");
+  background-image: url("../img/nosotros.jpg");
   background-size: cover;
   background-position: center center;
   min-width: 50%;

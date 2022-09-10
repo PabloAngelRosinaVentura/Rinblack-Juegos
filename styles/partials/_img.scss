@@ -48,16 +48,16 @@
     }
 }
 #img2 {
-    @include img(url("../../img/Pedidos1.jpg"), 490px, 320px)
+    @include img(url("../img/Pedidos1.jpg"), 490px, 320px)
 }
 #img3 {
-    @include img(url("../../img/Pedidos2.jpg"), 490px, 270px)
+    @include img(url("../img/Pedidos2.jpg"), 490px, 270px)
 }
 #img4 {
-    @include img(url("../../img/Pedidos3.jpg"), 490px, 215px)
+    @include img(url("../img/Pedidos3.jpg"), 490px, 215px)
 }
 #img5 {
-    background-image: url("../../img/nosotros.jpg");
+    background-image: url("../img/nosotros.jpg");
     background-size: cover;
     background-position: center center;
     min-width: 50%;
