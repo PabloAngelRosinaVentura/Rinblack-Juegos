@@ -37,9 +37,9 @@
         ul {
             @include display(row, space-between);
             align-items: center;
-            padding: 3px 150px 3px 50px;
-            font-family: BebasNeueRegular;
-            font-size: 22px;
+            padding: 2px 150px 0px 50px;
+            font-family: BebasNeueBold;
+            font-size: 18px;
     
             a {
                 color: $backgroundColor2;

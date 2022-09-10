@@ -15,18 +15,18 @@
 }
 
 @mixin img($url, $width, $height) {
-        background-image: $url;
-        background-size: cover;
-        background-position: center center;
-        max-width: 50%;
-        width: $width;
-        height: $height;
-        box-shadow: map-get($sombraImg, sombra3);
-        transition: all 200ms;
-        &:hover {
-            transform: scale(1.07);
-            border-radius: 10px;
-            box-shadow: none;
-            border: 3px solid $primaryColor;
+    background-image: $url;
+    background-size: cover;
+    background-position: center center;
+    max-width: 50%;
+    width: $width;
+    height: $height;
+    box-shadow: map-get($sombraImg, sombra3);
+    transition: all 200ms;
+    &:hover {
+        transform: scale(1.07);
+        border-radius: 10px;
+        box-shadow: none;
+        border: 3px solid $primaryColor;
         }
 }

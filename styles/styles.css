@@ -57,9 +57,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 3px 150px 3px 50px;
-  font-family: BebasNeueRegular;
-  font-size: 22px;
+  padding: 2px 150px 0px 50px;
+  font-family: BebasNeueBold;
+  font-size: 18px;
 }
 .encabezado nav ul a {
   color: #282828;
@@ -131,9 +131,6 @@
   background-color: #efa343;
 }
 #seccion2 .juegos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
   margin: 3% 3% 0% 3%;
 }
 #seccion2 .form {
@@ -155,80 +152,12 @@
   padding: 15px 0px;
 }
 
-.galeria {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 100%;
-  transition: all 200ms;
-}
-.galeria:hover {
-  transform: scale(1.07);
-  border-radius: 10px;
-  box-shadow: none;
-  border: 3px solid #ffffff;
-}
-
 /*juegos*/
 #seccionJuegos {
   background-color: #efa343;
 }
 #seccionJuegos .juegos2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
   margin: 3%;
-}
-
-/*pedidos*/
-#img2 {
-  background-image: url("../../img/Pedidos1.jpg");
-  background-size: cover;
-  background-position: center center;
-  max-width: 50%;
-  width: 490px;
-  height: 320px;
-  box-shadow: #8b8b8b 20px 20px;
-  transition: all 200ms;
-}
-#img2:hover {
-  transform: scale(1.07);
-  border-radius: 10px;
-  box-shadow: none;
-  border: 3px solid #ffffff;
-}
-
-#img3 {
-  background-image: url("../../img/Pedidos2.jpg");
-  background-size: cover;
-  background-position: center center;
-  max-width: 50%;
-  width: 490px;
-  height: 270px;
-  box-shadow: #8b8b8b 20px 20px;
-  transition: all 200ms;
-}
-#img3:hover {
-  transform: scale(1.07);
-  border-radius: 10px;
-  box-shadow: none;
-  border: 3px solid #ffffff;
-}
-
-#img4 {
-  background-image: url("../../img/Pedidos3.jpg");
-  background-size: cover;
-  background-position: center center;
-  max-width: 50%;
-  width: 490px;
-  height: 215px;
-  box-shadow: #8b8b8b 20px 20px;
-  transition: all 200ms;
-}
-#img4:hover {
-  transform: scale(1.07);
-  border-radius: 10px;
-  box-shadow: none;
-  border: 3px solid #ffffff;
 }
 
 /*nosotros*/
@@ -245,21 +174,6 @@
   max-width: 2000px;
   margin: auto;
   align-items: center;
-}
-.seccionNos #img5 {
-  background-image: url("../../img/nosotros.jpg");
-  background-size: cover;
-  background-position: center center;
-  min-width: 50%;
-  width: 700px;
-  min-height: 486px;
-  box-shadow: #8b8b8b -20px 20px;
-  transition: all 200ms;
-}
-.seccionNos #img5:hover {
-  border-radius: 10px;
-  box-shadow: none;
-  border: 3px solid #ffffff;
 }
 .seccionNos p {
   padding-left: 70px;
@@ -294,10 +208,13 @@
   padding-left: 70px;
   color: #ffffff;
   font-family: CenturyGothic;
-  font-size: medium;
+}
+.formContact label {
+  margin-bottom: 10px;
 }
 .formContact .input {
   width: 100%;
+  height: 50px;
   color: #ffffff;
   background: none;
   border-bottom: 2px solid #ffffff;
@@ -305,6 +222,10 @@
   border-right: none;
   border-left: none;
   outline: 0px;
+}
+.formContact #texto {
+  border: 2px solid #ffffff;
+  height: 100px;
 }
 
 /*footer*/
@@ -335,7 +256,7 @@ footer .redesFooter img {
   text-decoration: none;
 }
 * body {
-  background-color: #ddb786;
+  background-color: #ddb786 !important;
 }
 * body h1 {
   font-family: BebasNeuebold;
@@ -343,6 +264,7 @@ footer .redesFooter img {
   letter-spacing: 3px;
   color: #efa343;
   text-align: center;
+  padding: 0px 20px;
 }
 * body h2 {
   background-color: #efa343;
@@ -361,7 +283,7 @@ footer .redesFooter img {
   font-family: BebasNeueLight;
   font-weight: lighter;
 }
-.container {
+.container1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -447,20 +369,188 @@ footer .redesFooter img {
   box-shadow: #8b8b8b 20px 20px;
 }
 
+.galeria {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 80%;
+  min-width: 300px;
+  max-width: 400px;
+  transition: all 200ms;
+}
+.galeria:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
+#img2 {
+  background-image: url("../../img/Pedidos1.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 50%;
+  width: 490px;
+  height: 320px;
+  box-shadow: #8b8b8b 20px 20px;
+  transition: all 200ms;
+}
+#img2:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
+#img3 {
+  background-image: url("../../img/Pedidos2.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 50%;
+  width: 490px;
+  height: 270px;
+  box-shadow: #8b8b8b 20px 20px;
+  transition: all 200ms;
+}
+#img3:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
+#img4 {
+  background-image: url("../../img/Pedidos3.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 50%;
+  width: 490px;
+  height: 215px;
+  box-shadow: #8b8b8b 20px 20px;
+  transition: all 200ms;
+}
+#img4:hover {
+  transform: scale(1.07);
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
+#img5 {
+  background-image: url("../../img/nosotros.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-width: 50%;
+  width: 700px;
+  min-height: 486px;
+  box-shadow: #8b8b8b -20px 20px;
+  transition: all 200ms;
+}
+#img5:hover {
+  border-radius: 10px;
+  box-shadow: none;
+  border: 3px solid #ffffff;
+}
+
 @media screen and (max-width: 1200px) {
-  .container {
+  /*generales*/
+  nav {
+    width: 100vw !important;
+  }
+  nav ul {
+    padding: 0px 150px !important;
+  }
+  /*index*/
+  .container1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 30px 0px;
+  }
+  .container1 .texto {
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+  }
+  .container1 .texto h2 {
+    text-align: center;
+    padding: 15px;
+  }
+  .container1 .texto p {
+    padding: 30px 15px;
+    text-align: center;
+  }
+  .container1 #img {
+    min-width: 80%;
+  }
+  .tituloGaleria {
+    padding: 50px 20px;
+  }
+  /*pedidos*/
+  #img2, #img3, #img4 {
+    max-width: 80%;
+  }
+  /*nosotros*/
+  .seccionNos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0px;
+    justify-content: center;
+  }
+  .seccionNos #img5 {
+    max-width: 80%;
+  }
+  .seccionNos p {
+    margin-top: 30px;
+    padding: 30px 15px;
+    text-align: center;
+    height: 100%;
+  }
+  /*contacto*/
+  #containerCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0px;
+    align-items: center;
+  }
+  #containerCont .tituloCont {
+    max-width: 100%;
+    text-align: center;
+  }
+  #containerCont .tituloCont h2 {
+    padding: 15px 0px;
+  }
+  #containerCont .tituloCont p {
+    padding: 30px 15px;
+  }
+  .formContact {
+    min-width: 80%;
+    padding: 0px;
+  }
+  /*footer*/
+  footer {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+  }
+  footer img {
+    margin-top: 20px;
+    width: 120px;
+  }
+  footer .redesFooter {
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  footer .redesFooter img {
+    width: 30px;
   }
 }
 @media screen and (max-width: 768px) {
-  /*parametros generales*/
-  /*body*/
-  .boton {
-    width: 150px;
-    height: 50px;
-  }
+  /*generales*/
   #encabezadoIndex {
     height: 80vh;
   }
@@ -484,51 +574,10 @@ footer .redesFooter img {
     align-items: center;
     padding: 20px 0px;
   }
-  /*index*/
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px 0px;
+  .galeria {
+    margin-top: 2%;
   }
-  .container .texto {
-    padding: 0px;
-    margin: 0px;
-    max-width: 100%;
-  }
-  .container .texto h2 {
-    text-align: center;
-    padding: 15px;
-  }
-  .container .texto p {
-    padding: 30px 15px;
-    text-align: center;
-  }
-  .container #img {
+  #img {
     display: none;
-  }
-  .juegos {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  /*footer*/
-  footer {
-    height: 210px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px;
-  }
-  footer img {
-    margin-top: 20px;
-    width: 120px;
-  }
-  footer .redesFooter {
-    margin-bottom: 20px;
-    width: 120px;
-  }
-  footer .redesFooter img {
-    width: 30px;
   }
 }/*# sourceMappingURL=styles.css.map */
